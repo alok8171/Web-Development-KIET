@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Alok Singh — Portfolio</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Alok Singh — MCA student, web developer, and creator."
+    />
+
+    <style>
+      :root {
+        --bg: #0f1724;
+
+        --card: #0b1220;
+
+        --muted: #9aa4b2;
+
+        --accent: #7dd3fc;
+
+        --glass: rgba(255, 255, 255, 0.04);
+
+        --radius: 14px;
+
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: linear-gradient(180deg, #071022 0%, #071831 60%);
+        color: #e6eef3;
+      }
+
+      .wrap {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 28px;
+      }
+      header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        flex: 0 0 120px;
+        background: linear-gradient(135deg, var(--accent), #60a5fa);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 40px;
+        color: #032033;
+        box-shadow: 0 6px 30px rgba(4, 6, 12, 0.6);
+      }
+      h1 {
+        margin: 0;
+        font-size: 30px;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        margin-top: 6px;
+      }
+      nav {
+        margin-left: auto;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 14px;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 340px;
+        gap: 24px;
+        margin-top: 28px;
+      }
+
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01)
+        );
+        border-radius: var(--radius);
+        padding: 18px;
+        box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+      }
+
+      .about p {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .skill {
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: var(--glass);
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .projects {
+        display: grid;
+        gap: 12px;
+      }
+
+      .project {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 12px;
+      }
+
+      .project h3 {
+        margin: 0;
+      }
+
+      .project p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #0369a1, #7dd3fc);
+        color: #052631;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      aside .card {
+        position: sticky;
+        top: 28px;
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      input,
+      textarea {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 10px;
+        border-radius: 8px;
+        color: inherit;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: 2px solid rgba(125, 211, 252, 0.12);
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        margin-top: 30px;
+      }
+
+      @media (max-width: 880px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+        .avatar {
+          width: 90px;
+          height: 90px;
+          border-radius: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <img class="avatar" src="image.jpg" alt="Alok Singh" />
+
+        <div>
+          <h1>Alok Singh</h1>
+
+          <div class="subtitle">
+            MCA Student • Web Developer • Curious Creator
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+
+          <a href="#projects">Projects</a>
+
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <div id="about" class="card about">
+            <h2>About</h2>
+
+            <p>
+              Hello — I'm Alok Singh, an MCA student from Varanasi who crafts
+              clean, efficient web experiences. I enjoy turning ideas into
+              simple, optimized code and learning new tools. This portfolio
+              showcases my projects, skills, and the curious path I'm walking.
+            </p>
+
+            <div class="skills">
+              <span class="skill">HTML</span>
+
+              <span class="skill">CSS</span>
+
+              <span class="skill">JavaScript</span>
+
+              <span class="skill">Java</span>
+
+              <span class="skill">C++</span>
+
+              <span class="skill">React (Beginner)</span>
+            </div>
+          </div>
+
+          <div id="projects" class="card projects">
+            <h2>Projects</h2>
+
+            <article class="project">
+              <h3>KWIZ — Web Quiz Application</h3>
+
+              <p>
+                A modern, responsive quiz app built with HTML, CSS, and
+                JavaScript. Features: timed quizzes, score tracking, and a sleek
+                UI.
+              </p>
+
+              <div><a class="btn" href="#">View Project</a></div>
+            </article>
+
+            <article class="project">
+              <h3>Contact Management System</h3>
+
+              <p>
+                The Contact Management System facilitates adding, deleting, and
+                viewing contact details. Contact information is stored in a text
+                file ("contacts.txt") for easy retrieval and management.
+              </p>
+
+              <div>
+                <a
+                  class="btn"
+                  href="https://github.com/Alokraj76/Java- projects/blob/f2fc72274b6236796721904119c22967be58818d/ContactManagementSystem.ja va"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>To-Do List (C++)</h3>
+
+              <p>
+                Developed a simple console-based to-do list in C++ that allows
+                users to manage tasks efficiently.
+              </p>
+
+              <div>
+                <a
+                  class="btn"
+                  href="https://github.com/Alokraj76/CODSOFT/blob/main/Task4.cpp"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside>
+          <div class="card meta">
+            <h3>Contact</h3>
+
+            <p class="meta">
+              Email:
+              <a href="mailto:alokeesingh1234567@gmail.com"
+                >alokeesingh1234567@gmail.com</a
+              >
+            </p>
+
+            <p class="meta">Location: Varanasi, Uttar Pradesh</p>
+
+            <p class="meta">
+              LinkedIn:
+
+              <a
+                href="https://www.linkedin.com/in/alok-singh-089288241"
+                target="_blank"
+                >alok- singh-089288241</a
+              >
+            </p>
+
+            <p class="meta">
+              GitHub:
+
+              <a href="https://github.com/alok8171" target="_blank">alok8171</a>
+            </p>
+          </div>
+
+          <div class="card contact" id="contact">
+            <h3>Say Hello</h3>
+
+            <form
+              onsubmit="event.preventDefault(); window.location='mailto:alokeesingh1234567@gmail.com?subject=' + encodeURIComponent('Portfolio contact from ' + (document.getElementById('name').value||'Website')) + '&body=' + encodeURIComponent(document.getElementById('message').value||'Hello');"
+            >
+              <input id="name" placeholder="Your name" />
+
+              <input id="email" placeholder="Your email" />
+
+              <textarea id="message" rows="4" placeholder="Message"></textarea>
+
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h3>Resume</h3>
+
+            <p class="meta">Download Resume</p>
+
+            <a class="btn" href="Alok_Singh_Resume.docx" download>View</a>
+          </div>
+        </aside>
+      </main>
+
+      <footer>
+        <small
+          >© <span id="year"></span> Alok Singh — Built with care. Crafted for
+          clarity.</small
+        >
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
